@@ -25,6 +25,10 @@ main {
   text-decoration: none;
 }
 
+:root {
+  --color-white: #fff;
+}
+
 .container {
   width: 100%;
   max-width: 1125px;
@@ -57,7 +61,7 @@ header {
 }
 
 header .container {
-  background: white;
+  background: var(--color-white);
   border-radius: 150px 0 0 0;
 }
 
@@ -135,4 +139,34 @@ main .column-global section ul li strong {
   font-weight: 500;
   margin: 6px 0 0;
   display: inline-block;
+}
+
+/* FOOTER */
+footer {
+  background: #34adc9;
+  padding-top: 30px;
+}
+
+footer .info-contact {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-white);
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-media li {
+  text-align: center;
+  font-size: 40px;
+  margin: 15px;
+}
+
+footer nav ul li a {
+  color: var(--color-white);
+}
+
+footer ul li a p {
+  font-size: 12px;
 }
